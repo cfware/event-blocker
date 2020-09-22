@@ -1,0 +1,36 @@
+{
+	"name": "@cfware/event-blocker",
+	"version": "0.1.0",
+	"description": "Basic methods to block events",
+	"type": "module",
+	"main": "event-blocker.js",
+	"exports": "./event-blocker.js",
+	"scripts": {
+		"pretest": "cfware-lint .",
+		"tests-only": "nyc -s node --experimental-loader=@istanbuljs/esm-loader-hook test.js",
+		"test": "npm run -s tests-only",
+		"posttest": "nyc report --check-coverage"
+	},
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"author": "Corey Farrell",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cfware/event-blocker.git"
+	},
+	"bugs": {
+		"url": "https://github.com/cfware/event-blocker/issues"
+	},
+	"homepage": "https://github.com/cfware/event-blocker#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"@cfware/lint": "^1.4.3",
+		"@cfware/nyc": "^0.7.0",
+		"@istanbuljs/esm-loader-hook": "^0.1.2",
+		"glob": "^7.1.6",
+		"libtap": "^0.3.0",
+		"nyc": "^15.1.0"
+	}
+}
