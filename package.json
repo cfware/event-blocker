@@ -1,6 +1,6 @@
 {
     "name": "@cfware/event-blocker",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Basic methods to block events",
     "type": "module",
     "main": "event-blocker.js",
