@@ -1,36 +1,36 @@
 {
-	"name": "@cfware/event-blocker",
-	"version": "0.1.0",
-	"description": "Basic methods to block events",
-	"type": "module",
-	"main": "event-blocker.js",
-	"exports": "./event-blocker.js",
-	"scripts": {
-		"pretest": "cfware-lint .",
-		"tests-only": "nyc -s node --experimental-loader=@istanbuljs/esm-loader-hook test.js",
-		"test": "npm run -s tests-only",
-		"posttest": "nyc report --check-coverage"
-	},
-	"engines": {
-		"node": ">=16.12.0"
-	},
-	"author": "Corey Farrell",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/cfware/event-blocker.git"
-	},
-	"bugs": {
-		"url": "https://github.com/cfware/event-blocker/issues"
-	},
-	"homepage": "https://github.com/cfware/event-blocker#readme",
-	"dependencies": {},
-	"devDependencies": {
-		"@cfware/lint": "^3.0.0",
-		"@cfware/nyc": "^0.7.1",
-		"@istanbuljs/esm-loader-hook": "^0.2.0",
-		"glob": "^8.0.3",
-		"libtap": "^1.4.0",
-		"nyc": "^15.1.0"
-	}
+    "name": "@cfware/event-blocker",
+    "version": "0.1.0",
+    "description": "Basic methods to block events",
+    "type": "module",
+    "main": "event-blocker.js",
+    "exports": "./event-blocker.js",
+    "scripts": {
+        "pretest": "cfware-lint .",
+        "tests-only": "nyc -s node --experimental-loader=@istanbuljs/esm-loader-hook test.js",
+        "test": "npm run -s tests-only",
+        "posttest": "nyc report --check-coverage"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "author": "Corey Farrell",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cfware/event-blocker.git"
+    },
+    "bugs": {
+        "url": "https://github.com/cfware/event-blocker/issues"
+    },
+    "homepage": "https://github.com/cfware/event-blocker#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "@cfware/lint": "^4",
+        "@cfware/nyc": "^1",
+        "@istanbuljs/esm-loader-hook": "^0.2",
+        "glob": "^10",
+        "libtap": "^1",
+        "nyc": "^15"
+    }
 }

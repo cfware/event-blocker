@@ -3,12 +3,12 @@ export const stopPropagation = event => event?.stopPropagation();
 export const stopImmediatePropagation = event => event?.stopImmediatePropagation();
 
 export const blockEvent = event => {
-	preventDefault(event);
-	stopPropagation(event);
+    preventDefault(event);
+    stopPropagation(event);
 };
 
 export const immediateBlockEvent = event => {
-	preventDefault(event);
-	stopPropagation(event);
-	stopImmediatePropagation(event);
+    preventDefault(event);
+    stopPropagation(event);
+    stopImmediatePropagation(event);
 };
